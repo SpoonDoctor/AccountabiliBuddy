@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AccountabiliBuddy</title>
+  <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+  <div id=mainTitle>AccountabiliBuddy
+  </div>
+  <div id="mainPanel" class="panel">
+    <div id="tabArea">
+      <div id="mainTab" class="tab active tab1">
+        <div id="mainTabText" class="tabText"> Progress
+        </div>
+      </div>
+      <div id="goalsTab" class="tab inactive tab2">
+        <div id="goalsTabText" class="tabText"> Goals
+        </div>
+      </div>
+      <!-- <div id="settingsTab" class="tab inactive tab3">
+  <div id="settingsTabText" class="tabText"> Settings
+  </div>
+</div> -->
+    </div>
+    <div id="mainPanelContent" class="panelContent active tab1">
+      <div id="mainPanelTitle" class="panelTitle">Goal Progress
+      </div>
+      <div id="progressArea">
+        <div id="sundayprogress" class="progressEntry">Sunday:
+          <div class="goalUnitBox">
+            <input type="text" id="mondayValue" class="entryValue" maxlength="10"><span class=goalUnitLabel></span>
+          </div>
+        </div>
+        <div id="mondayprogress" class="progressEntry">Monday:
+          <div class="goalUnitBox">
+            <input type="text" id="mondayValue" class="entryValue" maxlength="10"><span class=goalUnitLabel></span>
+          </div>
+        </div>
+        <div id="tuesdayprogress" class="progressEntry">Tuesday:
+          <div class="goalUnitBox">
+            <input type="text" id="mondayValue" class="entryValue" maxlength="10"><span class=goalUnitLabel></span>
+          </div>
+        </div>
+        <div id="wednesdayprogress" class="progressEntry">Wednesday:
+          <div class="goalUnitBox">
+            <input type="text" id="mondayValue" class="entryValue" maxlength="10"><span class=goalUnitLabel></span>
+          </div>
+        </div>
+        <div id="thursdayprogress" class="progressEntry">Thursday:
+          <div class="goalUnitBox">
+            <input type="text" id="mondayValue" class="entryValue" maxlength="10"><span class=goalUnitLabel></span>
+          </div>
+        </div>
+        <div id="fridayprogress" class="progressEntry">Friday:
+          <div class="goalUnitBox">
+            <input type="text" id="mondayValue" class="entryValue" maxlength="10"><span class=goalUnitLabel></span>
+          </div>
+        </div>
+        <div id="saturdayprogress" class="progressEntry">Saturday:
+          <div class="goalUnitBox">
+            <input type="text" id="mondayValue" class="entryValue" maxlength="10"><span class=goalUnitLabel></span>
+          </div>
+        </div>
+        <div>
+          <Button id="progressSave" class="saveButton">Save
+          </Button>
+        </div>
+      </div>
+    </div>
+    <div id="goalPanelContent" class="panelContent inactive tab2">
+      <div id="goalPanelTitle" class="panelTitle">Goal Set
+      </div>
+      <div id="goalTypeField" class="dataField centered">Goal Type:
+        <select id="goalTypeDropdown" class="goalEntryValue">
+          <option value="mins">Practice Time</option>
+          <option value="mile">Run/Walk Distance
+          </option>
+          <option value="Cals">Calories</option>
+        </select>
+      </div>
+      <div id="goalEntryField" class="dataField">Goal:
+        <input type="text" id="goalValue" class="goalEntryValue" maxlength="4"><span class="goalUnitLabel goalSetUnit"></span>
+      </div>
+      <div id="goalThresholdField" class="dataField">"Success" Threshold:
+        <input type="text" id="successValue" class="goalEntryValue unitBox" maxlength="3"><span class=unitLabel>%</span>
+      </div>
+      <div id="buddyField" class="dataField">Email of AccountabiliBuddy:
+        <input type="text" id="buddyBox">
+      </div>
+      <div>
+        <Button id="goalsSave" class="saveButton centered">Save
+        </Button>
+      </div>
+    </div>
+    <!-- <div id="settingsPanelContent" class="panelContent inactive tab3">
+      <div id="settingsPanelTitle" class="panelTitle">Settings
+      </div>
+
+    </div> -->
+  </div>
+
+</body>
+
+<head>
+  <script type="text/javascript" src="index.js"></script>
+</head>
+
+</html>
